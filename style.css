@@ -1,0 +1,95 @@
+header {
+	display: flex;
+	flex-direction: row;
+}
+header > .imagen {
+	width: 380px;
+	height: 300px;
+	padding: 0;
+	overflow: hidden;
+	
+}
+
+header > .imagen > img {
+	width: 380px;
+	
+}
+header > .nombre {
+	background-color: yellow;
+	flex: 1;
+	padding-left: 20px;
+}
+
+header > .nombre > h2 {
+	font-size: 40px;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+}
+.primer-columna {
+	width: 380px;
+	background-color: #444444;
+	color: white;
+}
+.primer-columna > div {
+	padding: 30px;
+	padding-top: 0;
+}
+
+
+.primer-columna > h3 {
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul > li {
+	margin-bottom: 10px;
+}
+
+.segunda-columna {
+	flex: 1;
+	padding-left: 30px;
+}
+.segunda-columna > h2 {
+	text-decoration: underline;
+}
+.segunda-columna > ul > li {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.segunda-columna > ul > li > h4 {
+	margin-bottom: 5px;
+	padding-bottom: 0;
+
+}
+.segunda-columna > ul > li > .hidden{
+	opacity: 0;
+	transition: all .6s ease-in-out;
+	transform: translateY(-80px);
+	z-index: 1;
+}
+.segunda-columna > ul > li > .show{
+	transition: all .6s ease-in-out;
+}
+.segunda-columna > ul > li > button{
+	width: 100px;
+	background-color: yellow;
+	height: 30px;
+	font-weight: 700;
+	border: 1px solid gray;
+	border-radius: 4px;
+	z-index: 10;
+}
+a:active, a:visited, a:link {
+	color: white;
+	text-decoration: none;
+	text-decoration: underline;
+}
